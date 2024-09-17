@@ -14,7 +14,7 @@ require 'controllers/UseController.php';
 $authController = new AuthController();
 
 //instancia o controlador de autenticação
-
+$userController = new userController();
 //coleta a acao da url se, não ouver definida, usa login por padrao
 
     $action = $_GET['action'] ?? 'login';//usa o operador de coalecencia nula(??) para definir o 'login' se 'acticion' não estiver presente
