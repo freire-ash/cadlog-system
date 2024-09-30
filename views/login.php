@@ -7,56 +7,55 @@
     <title>Entrar</title>
     <link rel="stylesheet" href="/style.css">
     <style>
- 
+ /* altera fundo e adiciona estilo de fonte*/
         body {
-            background-color: #FFFFFF; /* Fundo branco */
+            background-color: #FFFFFF; 
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #333; /* Texto em cinza escuro para contraste suave */
+            color: #333; 
         }
- 
+ /*organiza a div ao centro e a estiliza*/
         div {
-            background-color: #f5f5f5; /* Fundo cinza bem claro para destacar a div */
+            background-color: #f5f5f5;
             border-radius: 10px;
             padding: 20px;
             width: 300px;
-            margin: 120px auto; /* Centralizado e com margem superior */
-            border: 1px solid #000000; /* Borda verde neon minimalista */
+            margin: 120px auto;
+            border: 1px solid #000000; 
         }
- 
+  /*estiliza e alinha ao centro*/
         h2 {
-            color: #32c718; /* Verde neon para o título */
+            color: #32c718; 
             text-align: center;
             margin-bottom: 20px;
             font-size: 20px;
         }
- 
+  /*organiza form dando espaçamento e a estiliza*/
         form {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
- 
+  /*aumenta o tamanho da fonte  */
         label {
-            color: #333; /* Texto escuro para contraste com o fundo claro */
+            color: #333;
             font-size: 14px;
         }
- 
+  /* estiliza input e select*/
         input, select {
             border-radius: 5px;
-            border: 1px solid #000000; /* Borda verde neon sutil nos campos */
-            padding: 10px;
-            background-color: #FFFFFF; /* Fundo branco para os campos */
-            color: #333; /* Texto escuro para legibilidade */
+            border: 1px solid #000000; 
+            background-color: #FFFFFF; 
+            color: #333; 
         }
  
         input:focus, select:focus {
             outline: none;
-            border-color: #e2e4e1; /* Cor verde neon mais suave ao focar */
-            box-shadow: 0 0 5px rgba(57, 255, 20, 0.3); /* Leve sombra neon */
+            border-color: #e2e4e1; 
+            box-shadow: 0 0 5px rgba(57, 255, 20, 0.3); 
         }
- 
+  /*button é estilizado*/
         button {
-            background-color: #39FF14; /* Fundo verde neon */
+            background-color: #39FF14; 
             color: #FFFFFF; 
             padding: 10px;
             border-radius: 5px;
@@ -69,7 +68,7 @@
         button:hover {
             background-color: #32CC12; 
         }
- 
+  /*coloca o texto dentro de "a" ao centro e o colore*/
         a {
             color: #ffffff; 
             position: relative;
@@ -80,6 +79,7 @@
         a:hover {
             color: #ffffff; 
         }
+        /*cria uma segunda configuração de uma div para estilizar e a centralizar*/
         #link{background-color: #39FF14; 
             color: #FFFFFF; 
             border-radius: 5px;
