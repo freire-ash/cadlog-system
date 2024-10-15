@@ -16,13 +16,25 @@ $authController = new AuthController();
 //instancia o controlador de autenticação
 $userController = new userController();
 //coleta a acao da url se, não ouver definida, usa login por padrao
-
+$dashboardController = new DashboardController();
     $action = $_GET['action'] ?? 'login';//usa o operador de coalecencia nula(??) para definir o 'login' se 'acticion' não estiver presente
 
-switch($action){
-    case 'login':
-        $authController->login();// chama o metodo login do controlador de autenticação
-
-        
-}
+    switch ($action) {
+        case 'login':
+            $authController->login(); // chama o método login do controlador de autenticação
+            break;
+    
+        case 'register':
+            $userController->register();
+            break;
+    
+        case 'dashboard':
+            $dashboardController->index();
+            break;
+        case 'logout':
+            $authController -> logout();
+        default:
+            $authController->login(); // ação padrão, chama login se nenhuma das opções acima for correspondida
+            break;
+    }
 ?>
